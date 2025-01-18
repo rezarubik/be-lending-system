@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    // Register new user
     public function register(Request $request)
     {
         $request->validate([
@@ -44,7 +43,6 @@ class AuthController extends Controller
     }
 
 
-    // Login and create JWT token
     public function login(Request $request)
     {
         $credentials = $request->only('phone_number', 'password');
@@ -65,7 +63,6 @@ class AuthController extends Controller
     }
 
 
-    // Logout user (invalidate JWT token)
     public function logout()
     {
         try {
@@ -76,7 +73,6 @@ class AuthController extends Controller
         }
     }
 
-    // Get authenticated user
     public function getUser()
     {
         return response()->json(auth()->user());

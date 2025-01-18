@@ -20,7 +20,6 @@ class Lender extends Authenticatable
         'password',
     ];
 
-    // Relasi dengan investasi
     public function investments()
     {
         return $this->hasMany(Investment::class);

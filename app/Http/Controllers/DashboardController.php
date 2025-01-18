@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    // Borrower dashboard - view loan limit
     public function borrowerDashboard()
     {
         $user = auth()->user();
@@ -23,7 +22,6 @@ class DashboardController extends Controller
         ]);
     }
 
-    // Lender dashboard - view total investment
     public function lenderDashboard()
     {
         $user = auth()->user();

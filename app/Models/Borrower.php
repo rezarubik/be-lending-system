@@ -20,7 +20,6 @@ class Borrower extends Authenticatable
         'password',
     ];
 
-    // Menghitung limit pinjaman berdasarkan penghasilan
     public function calculateLoanLimit()
     {
         return $this->monthly_income * 0.3; // 30% dari penghasilan bulanan

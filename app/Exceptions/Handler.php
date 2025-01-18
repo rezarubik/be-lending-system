@@ -34,7 +34,6 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         if ($exception instanceof ValidationException) {
-            // Mengembalikan respons validasi dalam format JSON
             return response()->json([
                 'message' => 'The given data was invalid.',
                 'errors' => $exception->errors(),

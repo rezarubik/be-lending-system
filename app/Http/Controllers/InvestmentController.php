@@ -7,7 +7,6 @@ use App\Models\Investment;
 
 class InvestmentController extends Controller
 {
-    // Add a new investment
     public function addInvestment(Request $request)
     {
         $user = auth()->user();
@@ -44,7 +43,6 @@ class InvestmentController extends Controller
         ]);
     }
 
-    // List all investments
     public function listInvestments()
     {
         $user = auth()->user();

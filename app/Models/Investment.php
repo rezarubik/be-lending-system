@@ -9,9 +9,6 @@ class Investment extends Model
 {
     use HasFactory;
 
-    // protected $fillable = [
-    //     'user_id', 'lender_id', 'amount', 'bank', 'va_number',
-    // ];
     protected $guarded = [];
 
     public function lender()
