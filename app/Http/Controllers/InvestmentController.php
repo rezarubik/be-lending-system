@@ -30,13 +30,6 @@ class InvestmentController extends Controller
 
         $virtualAccount = $bankCodes[$request->bank] . $user->phone_number;
 
-        // return [
-        //     'user_id' => $user->id,
-        //     'amount' => $request->amount,
-        //     'bank' => $request->bank,
-        //     'virtual_account' => $virtualAccount,
-        // ];
-
 
         $investment = Investment::create([
             'user_id' => $user->id,

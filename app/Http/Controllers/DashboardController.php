@@ -18,7 +18,7 @@ class DashboardController extends Controller
         $loanLimit = 0.3 * $user->monthly_income;
 
         return response()->json([
-            'name' => $user->name,
+            'user' => $user,
             'loan_limit' => $loanLimit,
         ]);
     }
@@ -35,7 +35,7 @@ class DashboardController extends Controller
         $totalInvestment = $user->investments()->sum('amount');
 
         return response()->json([
-            'name' => $user->name,
+            'user' => $user,
             'total_investment' => $totalInvestment,
         ]);
     }
