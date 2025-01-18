@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "f913a93c-8218-451c-bb36-ff6f4ffbda43",
+		"name": "Technical Test UangMe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7973421"
+	},
+	"item": [
+		{
+			"name": "Borrower",
+			"item": [
+				{
+					"name": "Dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTkxMTE1LCJleHAiOjE3MzcxOTQ3MTUsIm5iZiI6MTczNzE5MTExNSwianRpIjoiRzhtNzFWRXNJcVV2NlhBOCIsInN1YiI6IjciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ReC6uvVjRk2Qg0s13oOGtekEacO9riA-h7xjWudNBJA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/borrower/dashboard"
+					},
+					"response": []
+				},
+				{
+					"name": "Melihat jumlah investasi",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTc5OTkwLCJleHAiOjE3MzcxODM1OTAsIm5iZiI6MTczNzE3OTk5MCwianRpIjoicVhxUEZJWldoZlM0a0JyeiIsInN1YiI6IjYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.8i4tDa-dMvdGIm_9yw4rLBU0Sai27GTgWJiwLeWyCco"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/borrower/loan-limit"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lender",
+			"item": [
+				{
+					"name": "Dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTkyODY1LCJleHAiOjE3MzcxOTY0NjUsIm5iZiI6MTczNzE5Mjg2NSwianRpIjoiYjBKWVIyNHBpNjVKa2xrZSIsInN1YiI6IjgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Q8rxA2Q8O7HRoEUsLbyiNwCLHG24ElEhfik7qqr-JCI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/lender/dashboard"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Investment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTkyODY1LCJleHAiOjE3MzcxOTY0NjUsIm5iZiI6MTczNzE5Mjg2NSwianRpIjoiYjBKWVIyNHBpNjVKa2xrZSIsInN1YiI6IjgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Q8rxA2Q8O7HRoEUsLbyiNwCLHG24ElEhfik7qqr-JCI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 5000000,\n  \"bank\": \"BCA\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/lender/investments"
+					},
+					"response": []
+				},
+				{
+					"name": "List Investments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTkyODY1LCJleHAiOjE3MzcxOTY0NjUsIm5iZiI6MTczNzE5Mjg2NSwianRpIjoiYjBKWVIyNHBpNjVKa2xrZSIsInN1YiI6IjgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Q8rxA2Q8O7HRoEUsLbyiNwCLHG24ElEhfik7qqr-JCI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/lender/investments"
+					},
+					"response": []
+				},
+				{
+					"name": "Melihat jumlah investasi",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTc5Mzg0LCJleHAiOjE3MzcxODI5ODQsIm5iZiI6MTczNzE3OTM4NCwianRpIjoicWpLdFhKQWFBQTNOOFlGeCIsInN1YiI6IjUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lu0mVkxI111CRPdzEVL_1eOSXSiAdrgqWInlC5JHmR0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/lender/investments/total"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe Borrower\",\n    \"birth_place\": \"Jakarta\",\n    \"birth_date\": \"1990-01-01\",\n    \"phone_number\": \"08123456789\",\n    \"id_card_number\": \"1234567890123456\",\n    // \"id_card_photo\": \"data:image/jpeg;base64,<BASE64_ENCODED_IMAGE>\",\n    \"monthly_income\": 15000000,\n    \"role\": \"borrower\",\n    \"password\": \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8001/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzM3MTc4NTkzLCJleHAiOjE3MzcxODIxOTMsIm5iZiI6MTczNzE3ODU5MywianRpIjoidUJONHZxOU1obG15V0JhNyIsInN1YiI6IjUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.VV9DGgJpMfqbRjVr2IerS1_CLRr9YULAHmhcV-dOzi8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // Borrower\n//   \"phone_number\": \"08123456789\",\n//   \"password\": \"password123\"\n//   eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTc5OTkwLCJleHAiOjE3MzcxODM1OTAsIm5iZiI6MTczNzE3OTk5MCwianRpIjoicVhxUEZJWldoZlM0a0JyeiIsInN1YiI6IjYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.8i4tDa-dMvdGIm_9yw4rLBU0Sai27GTgWJiwLeWyCco\n\n// Lender\n//   \"phone_number\": \"08123456788\",\n//   \"password\": \"password123\"\n// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDEvYXBpL2xvZ2luIiwiaWF0IjoxNzM3MTc5Mzg0LCJleHAiOjE3MzcxODI5ODQsIm5iZiI6MTczNzE3OTM4NCwianRpIjoicWpLdFhKQWFBQTNOOFlGeCIsInN1YiI6IjUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lu0mVkxI111CRPdzEVL_1eOSXSiAdrgqWInlC5JHmR0\n\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8001/api/login"
+			},
+			"response": []
+		}
+	]
+}
